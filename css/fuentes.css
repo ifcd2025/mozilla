@@ -1,0 +1,16 @@
+@font-face {
+    font-family: inter;
+    src: url("../fuentes/Inter-Regular.d55e957612a3.woff2");
+}
+@font-face {
+    font-family: interBold;
+    src: url("../fuentes/Inter-Bold.0564381b22b2.woff2");
+}
+@font-face {
+    font-family: zilla;
+    src: url("../fuentes/ZillaSlab-Regular.f9de6143fdfa.woff2");
+}
+@font-face {
+    font-family: zillaBold;
+    src: url("../fuentes/ZillaSlab-Bold.8d7f01331d2b.woff2");
+}

@@ -1,0 +1,168 @@
+@import "fuentes.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+body {
+    font-family: inter;
+}
+.introduccion {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    h1 {
+        font-size: 3em;
+        font-family: zillaBold;
+    }
+    p {
+        font-family: zilla;
+        font-size: 1.5em;
+    }
+}
+
+.cita {
+    background: linear-gradient(90deg, 
+    rgb(237,220,237) 0%,
+    rgb(179,228,219) 52%,
+    rgba(125,235,202,.3) 100%);
+    text-align: center;
+    padding: 2.3em;
+    margin: 50px auto;
+    p {
+        font-family: interBold;
+        margin-top: .5em;
+    }
+}
+.codigoFuente {
+    background-color: #f0f0f4;
+    padding: 2em;
+    h2 {
+        font-size: 1.4em;
+        font-family: zillaBold;
+        text-align: center;
+    }
+    p {
+        margin: 1em 30%;
+    }
+    .botonRelleno {
+        /* lo centramos horizontalmente */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.boton {
+    border:2px solid black;
+    border-radius: 5px;
+    padding: .4em 2em;
+    display: block; /* ya que los enlaces son en linea y no 
+        "funcionan" bien los padding y margin superiores e
+        inferiores */
+    /* Al convertirlos en bloque pasan a tener un 100% de ancho.
+    Con esto lo arreglamos */
+    width: fit-content;
+    color:black;
+    font-family: interBold;
+    margin: 0.6em 0;
+}
+.botonRelleno {
+    background-color: black;
+    color: white;
+}
+
+.preguntas {  
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    column-gap: 30px;
+    h3 {
+        font-family: zillaBold;
+        font-size: 1.8em;
+    }
+    img {
+        width: 50%;
+        align-self: self-start; /* Para que no se alargue de alto */
+    }
+    
+    .botonRelleno {
+        background-image: url("../imagenes/enlace_externo_blanco.png");
+        background-repeat: no-repeat;
+        background-position: 98% center;
+    }
+    .botonRelleno:hover {
+        background-color: white;
+        color: black;
+        background-image: url("../imagenes/enlace_externo_negro.png");
+    }
+}
+footer {
+    display: flex;
+    column-gap: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    ul {
+        list-style-type: none;
+    }
+    li {
+        margin: 1em auto;
+        font-size: .8em;
+    }
+    a {
+        color: white;
+    }
+    p {
+        font-family: zillaBold;
+    }
+}
+.privacidad {
+    h2 {
+        font-size: 1.8em;
+        font-family: zillaBold;
+        text-align: center;
+    }
+}
+.contenedorPrivacidad {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Para que vayan en varias filas si hace falta*/
+    div {
+        max-width: 400px;
+        min-width: 200px;
+        text-align: center;
+        font-family: interBold;
+        img {
+            width: 64px;
+        }
+        .boton {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+header {
+    border-bottom: 2px solid lightgrey;
+    padding-bottom: 0.5em;
+    padding-left: 100px;
+    img {
+        height: 1.2em;
+        vertical-align: middle;
+    }
+    nav {
+        display: inline; /*Para que no salte de línea y no quede la imagen encima */
+    }
+    nav a {
+        color: black;
+        font-family: interBold;
+        font-size: .8em;
+        margin: auto 1em;
+    }
+}
